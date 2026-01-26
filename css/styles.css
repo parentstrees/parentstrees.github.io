@@ -22,48 +22,54 @@ main.container-fluid {
 .wrapper {
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: (5, 1fr);
-    gap: 1em;  
-    border-radius: 0.5em;
-    border: 1em black;
-    back-ground-color: #000080;
+   /* grid-template-rows: (5, 1fr); */
+    grid-auto-rows: 100px;
+    margin-top: 20px;
+    gap: 5px;   
+   /* background-color: #000080; */
 }
 
-.box1: {
+.wrapper > div {
+    border-radius: 0.25em;
+    border: 1px solid black;
+    grid-row-gap: 20px; 
+ }
+
+.box1 {
     grid-row: 1 / 3;
-    grid-column: 1, span;
+    grid-column: 1 / span 3;
     background-color: #8A244B;
 }
 
-.box2: {
+.box2 {
     grid-row: 3 / 5;
     grid-column: 1 / 2;
     background-color: #FAEB92;   
 }
 
-.box3: {
+.box3 {
     grid-row: 3 / 4;
-    grid-column: 2, span;
+    grid-column: 2 / span 2;
     background-color: #75B06F;
 }
 
-.box4: {
+.box4 {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
-    back-ground-color: #B0FFFA; 
+    background-color: #B0FFFA; 
+    padding: 10px;
 }
 
-.box5: {
+.box5 {
     grid-row: 4 / 5;
     grid-column: 3 / 4;
-    back-ground-color: #85409D;
+    background-color: #85409D;
 }
 
-.box6: {
+.box6 {
     grid-row: 5 / 6;
-    grid-column: 1, span;
-    back-ground-color: #F39EB6;
-}
+    grid-column: 1 / span 3;
+    background-color: #F39EB6;
 
 p {
     font-family: 'Open Sans', sans-serif;
