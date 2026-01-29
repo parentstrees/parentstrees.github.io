@@ -4,16 +4,17 @@
 /*GLOBAL*/
 body {
     padding-top: 5rem;
-
+    max-width: 100%;
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
-
 
 main {
     padding: 20px;
+    background-color: lightgrey;
 }
 
 main.container-fluid {
@@ -36,6 +37,10 @@ main.container-fluid {
     border-radius: 0.25em;
     border: 1px solid black;
     grid-row-gap: 20px; 
+    font-size: 1.5rem;
+    color: rgb(27, 15, 15);
+    font-weight: bold;
+    justify-content: center; 
  }
 
 .box1 {
