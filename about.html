@@ -50,46 +50,30 @@
     <script>
         const user = {
             name: 'Carole Parent',
-            imageUrl: '',
-            bio: ''
+            imageUrl: 'images/dog_200px.jpg',
+            imageAlt: 'Picture of dog sitting behind advertisement sign for xmas tree sales',
+            bio: 'I am learning about web development in hopes of building my own website to promote my Christmas tree farm business.'
         };
-// Create h1 with full name
-const h1Element = React.createElement(
-    'h1',
-    null,
-    `${user.firstName} ${user.lastName} - ${user.title}`
-);
 
-// Create image
-const imgElement = React.createElement(
-    'img',
+        const h1Element = React.createElement(
+            'h1', user.name);
+
+        const imgElement = React.createElement(
+            'img',
     {
-        src: user.imageUrl,
-        alt: user.imageAlt,
-        width: "300"
+            src: user.imageUrl,
+            alt: user.imageAlt,
     }
 );
 
-// Create bio paragraph
-const pBio = React.createElement(
-    'p',
-    null,
-    user.bio
+        const pBio = React.createElement(
+            'p',
+            user.bio
 );
-
-// Combine all elements
-const container = React.createElement(
-    'div',
-    { className: 'user-profile' },
-    h1Element,
-    imgElement,
-    pBio,
-    pEmail
-);
-
-        // Step one - Create a React element
-
-        // Step 2: Render the React element
+    
+        ReactDOM.createRoot(document.getElementById("h1")).render(h1Element);
+        ReactDOM.createRoot(document.getElementById("img")).render(imgElement);
+        ReactDOM.createRoot(document.getElementById("content")).render(pElement);
 
     </script>
 
