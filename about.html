@@ -49,10 +49,43 @@
 
     <script>
         const user = {
-            name: '',
+            name: 'Carole Parent',
             imageUrl: '',
             bio: ''
         };
+// Create h1 with full name
+const h1Element = React.createElement(
+    'h1',
+    null,
+    `${user.firstName} ${user.lastName} - ${user.title}`
+);
+
+// Create image
+const imgElement = React.createElement(
+    'img',
+    {
+        src: user.imageUrl,
+        alt: user.imageAlt,
+        width: "300"
+    }
+);
+
+// Create bio paragraph
+const pBio = React.createElement(
+    'p',
+    null,
+    user.bio
+);
+
+// Combine all elements
+const container = React.createElement(
+    'div',
+    { className: 'user-profile' },
+    h1Element,
+    imgElement,
+    pBio,
+    pEmail
+);
 
         // Step one - Create a React element
 
