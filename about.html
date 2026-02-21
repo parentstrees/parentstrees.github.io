@@ -62,11 +62,11 @@
             src: user.imageUrl
         },  null);
 
-        const content = React.createElement('p', {classname: "content"}, user.bio);
+        const content = React.createElement('content', {classname: "content"}, user.bio);
     
         ReactDOM.render(h1, document.getElementById("h1"));
         ReactDOM.render(img, document.getElementById("img"));
-        ReactDOM.render('p', document.getElementById("content"));
+        ReactDOM.render(content, document.getElementById("content"));
 
     </script>
 
