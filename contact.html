@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contact: Carole Parent</title>
+        <link rel="icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Open+Sans:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="css/contactstyles.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Carole Parent
+              <img src="images/favicon.jpg" alt="initials"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="grid.html">Grid</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="media.html">Media</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="carousel.html">Carousel</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <img src="images/favicon.ico" alt="trees logo"></li>
+                </ul>
+            </div>
+        </nav>
+        <header>Contact info</header>
+        <h2>Contact</h2>
+        <main>
+          
+          <form action="/my-handling-form-page" method="post">
+                        
+    <!--starting a <fieldset> to seperate categories-->
+        <fieldset>
+        <fieldset><legend>Contact info</legend></fieldset>
+        <fieldset>    <legend>Question 1</legend>         
+    <!--Checkbox section for choices in tree species, using form controls, form-check-->        
+            <p>What species of tree would you be interested in at the tree farm?</p>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check1">
+                <label class="form-check-label" for="check1">balsam</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check2">
+                <label class="form-check-label" for="check2">fraser</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check3">
+                <label class="form-check-label" for="check3">white spruce</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="check4">
+                <label class="form-check-label" for="check4">canaan</label></div>
+            </fieldset>
+    <!--Starting another fieldset-->
+     
+      <fieldset>
+        <legend>Question 2</legend>
+    <!--Radio checklist for choosing time of day to visit, using form-check, one box checked-->
+         <p>Do you prefer to visit the farm on a weekend or during the week in the afternoon?</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">weekend</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">weekday afternoon</label>
+              </div></fieldset>
+    <!--Using form control, gutters and another fieldset-->
+        
+        <fieldset>
+        <legend>Contact information</legend>
+    <!--Name, address, email, and phone using form-label-->
+           <div class="row g-3">
+           <div class="col">
+              <label for="inputname" class="form-label">First name</label>
+              <input type="text" class="form-control" id="inputname"></div>
+            </div>
+            <div class="col">
+              <label for="inputname1" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="inputname1">
+            </div>
+            <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label">Email address</label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+               </div>
+            <div class="tel">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div> 
+             
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+    <!--Formulating a dropdown list with using form control, input group-->
+                <div class="input-group">
+                  <label class="input-group-text" for="inputGroupSelect01">State</label>
+                  <select class="form-select" id="inputGroupSelect01">        
+                    <option value="1">VT</option>
+                    <option value="2">NY</option>
+                    <option value="3">NH</option>
+                    <option value="4">ME</option>
+                    <option value="5">MA</option>
+                  </select>
+                </div>
+                  <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+          </fieldset>
+    <!--separation of categories using fieldset-->
+          <fieldset>
+            <legend>Ask a question</legend>
+    <!--textarea-->
+            <div class="input-group">
+                <span class="input-group-text">Questions/Comments</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </fieldset>
+    <!--submission button-->
+            <fieldset><legend>Submit this form</legend>
+            <div>
+                <p><button type="submit" class="btn btn-primary">Submit</button>
+                </p></div></fieldset>
+              </form>
+        </main>
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+   
+    <script src="footer.js"></script>
+
+    </body>
+    </html>

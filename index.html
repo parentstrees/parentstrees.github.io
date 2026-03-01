@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
+  <meta name="description" content="home page">
   <meta name="author" content="">
-  <title>Carole Parent</title>
+  <title>Home: Carole Parent</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
   <!-- Bootstrap core CSS -->
   <link href="css/styles.css" rel="stylesheet">
@@ -15,10 +15,12 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Carole Parent</a>
+  <a class="navbar-brand" href="#">Carole Parent
+  <img src="images/favicon.jpg" alt="initials"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <!-- Nav links to other pages -->
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -31,21 +33,26 @@
         <a class="nav-link" href="carousel.html">Carousel</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="media.html">Media</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li>
+        <img src="images/favicon.ico" alt="trees logo"></li>
     </ul>
   </div>
 </nav>
-
+<!--Added fetch priority to image-->
 <main role="main" class="container-fluid">
 
   <div class="container home_2col">
     <div class="row">
       <div class="col">
-           <img src="images/balsam.jpg" class="rounded d-block dibley" alt="...">
+           <img src="images/balsam.jpg" fetchpriority="high" class="rounded d-block dibley" alt="...">
       </div>
       <div class="col">
-        <h1>Carole Parent : WEBD-225</h1>
+        <h1>Parent's Chrismtas Tree Farm</h1>
       </div>
     </div>
   </div><!--end 2col-->
@@ -53,6 +60,7 @@
   <p>Introductory of my tree website.</p>
   <article>
     <h2>Parent's Christmas Tree Farm</h2>
+    <!-- List of tree species -->
     <p>Located in Sheldon, VT this is a small Christmas Tree Farm consisting of several types of tress.
       <ul>
         <li>balsam firs</li>
@@ -66,6 +74,12 @@
   </article>
      
 </main><!-- /.container -->
+
+<!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+  
+    <script src="footer.js"></script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

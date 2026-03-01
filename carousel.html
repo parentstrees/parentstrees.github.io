@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
+    <meta name="description" content="Slideshow of Christmas tree field">
     <meta name="author" content="">
     <title>Carousel: Carole Parent</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
@@ -14,10 +14,13 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">Carole Parent</a>
+    <a class="navbar-brand" href="#">Carole Parent
+     <img src="images/favicon.jpg" alt="initials"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-    </button>
+    </button>  
+
+    <!-- Nav links to other pages -->
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -26,39 +29,43 @@
             <li class="nav-item">
                 <a class="nav-link" href="grid.html">Grid</a>
             </li>
-             <li class="nav-item">
-        <a class="nav-link" href="carousel.html">Carousel</a>
-      </li>
-            <li class="nav-item">
-        <a class="nav-link" href="about.html">About</a>
-      </li>
-        </ul>
+             <li class="nav-item active">
+               <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+              <li class="nav-item active">
+               <a class="nav-link" href="media.html">Media</a>
+            </li>
+             <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+           </ul>
     </div>
 </nav>
 
 <main role="main" class="container-fluid">
      <h2>Carousel</h2>
-    
+    <!-- Slideshow using pics from local drive -->
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
       <div class="carousel-inner">
       <div class="carousel-item active"> 
+        <!--Added fetch priority to all images-->
         <figure>  
-        <img src="images/trees1.jpg" class="d-block w-100" alt="Christmas tree field" title="Christmas Trees">
+        <img src="images/trees1.jpg" class="d-block w-100" alt="Christmas tree field" title="Christmas Trees" fetchpriority="high">
         <figcaption>Christmas tree field</figcaption></figure>
     </div> 
       <div class="carousel-item">   
         <figure>
-        <img src="images/trees2.jpg" class="d-block w-100" alt="Trimmed fraser firs" title="Fraser fir view">
+        <img src="images/trees2.jpg" class="d-block w-100" alt="Trimmed fraser firs" title="Fraser fir view" fetchpriority="high">
         <figcaption>Trimmed fraser firs</figcaption></figure>
     </div>
       <div class="carousel-item"> 
         <figure>
-        <img src="images/trees4.jpg" class="d-block w-100" alt="Rows of beautiful balsam firs" title="Balsam fir">
+        <img src="images/trees4.jpg" class="d-block w-100" alt="Rows of beautiful balsam firs" title="Balsam fir" fetchpriority="high">
         <figcaption>Rows of beautiful balsam firs</figcaption></figure>
     </div> 
       <div class="carousel-item">   
         <figure>
-        <img src="images/trees5.jpg" class="d-block w-100" alt="Hill of Christmas trees" title="Christmas tree hill">
+        <img src="images/trees5.jpg" class="d-block w-100" alt="Hill of Christmas trees" title="Christmas tree hill" fetchpriority="high">
         <figcaption>Hill of Christmas trees</figcaption></figure>
     </div>
    </div>
@@ -72,6 +79,13 @@
   </button>
 </div>
 </main><!-- /.container -->
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+
+    <script src="footer.js"></script>
+
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
